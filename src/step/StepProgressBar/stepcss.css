@@ -1,0 +1,91 @@
+#step-progress-bar {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  padding-bottom: 40px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.step-row {
+  display: flex;
+  align-items: center;
+}
+
+.step_odd {
+  justify-content: center;
+}
+
+.step_even {}
+
+.step-every {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.connector {
+  width: 230px;
+  height: 2px;
+  background-color: #1890FF;
+  margin: 0 10px;
+}
+
+.step {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 25px;
+}
+
+.step_children {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chil_connector {
+  height: 30px;
+  width: 2px;
+  background-color: #1890FF;
+  margin-bottom: 10px;
+}
+
+.chil_data {
+  white-space: nowrap;
+}
+
+.right_arc {
+  position: absolute;
+  top: 5px;
+  width: 165px;
+  height: 159px;
+  border-top: 0;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-left: 0;
+  border-radius: 0 50% 50% 0;
+  clip-path: polygon(0% 0%, 100% 22%, 200% 50%, 0% 130%);
+  transform: translate(64%, -93%);
+}
+
+.left_arc {
+  position: absolute;
+  top: 5px;
+  width: 165px;
+  height: 159px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 50% 0 0 50%;
+  clip-path: polygon(0% 0%, 100% 0%, 200% 50%, 0% 95%);
+  transform: translate(29px, -94%);
+}
